@@ -1,0 +1,12 @@
+* 마진 패딩0
+li list-style-type none
+
+반응형
+세로일때 div.left none
+가로일때 div.left 30%, 왼쪽정렬
+가로일때 div.right70%, 오른쪽정렬
+
+기본구성
+div.content padding 16
+li의 위아래여백 24
+li의 아래쪽테두리 1px solid #c7c7c7

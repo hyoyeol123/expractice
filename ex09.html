@@ -7,6 +7,10 @@
     <title>ex09</title>
 </head>
 <style>
+    html {
+        width:100%;
+        height:100%;
+    }
     * {
         margin: 0px;
         list-style-type: none;
@@ -16,36 +20,37 @@
         width: 960px;
         overflow: hidden;
     }
-    .left {
-        width: 288px;
-        float: left;
-    }
-    .right {
-        width: 672px;
-        float: right;
-    }
     .content {
         padding:16px;
+        width:672px;
+    }
+    .content0 {
+        padding:16px;
+        width:288px;
     }
     li {
         padding-top: 24px;
         padding-bottom: 24px;
         border-bottom: 1px solid #c7c7c7;
     }
+    .pr {
+        display:flex;
+        justify-content: center;
+    }
 
     @media screen and (max-width: 960px) {
         body {width:auto;}
-        .left{display:none;}
+        .content0{display:none;}
         .right {width:960px; float:none;}
+        .content {word-break: normal;}
     }
 
 
 
 </style>
 <body>
-    <div>
-        <div class="left">
-            <div class="content">
+    <div class="pr">
+            <div class="content0">
                 <h1>List</h1>
                 <ul>
                     <li>내용1234512345123132432141</li>
@@ -55,32 +60,29 @@
                     <li>내용1234512345123132432141</li>
                 </ul>
             </div>
-        </div>
-        <div class="right">
             <div class="content">
                 <h1>Lorem ipsum</h1>
                 <p>ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
                      but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                     Ipsum passages, and more recently with desktop publishing softw</p>
-                <p>ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     Ipsum passages, and more recently with desktop publishing softw
+                ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
                      but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                     Ipsum passages, and more recently with desktop publishing softw</p>
-                <p>ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     Ipsum passages, and more recently with desktop publishing softw
+                ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
                      but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                     Ipsum passages, and more recently with desktop publishing softw</p>
-                <p>ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     Ipsum passages, and more recently with desktop publishing softw
+                ypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
                      but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                      Ipsum passages, and more recently with desktop publishing softw</p>
             </div>
-        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex21</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div>클릭</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var colors = ['red', 'green', 'blue']
+        var currentColor = 0
+        $('div').css({
+            backgroundColor : colors[currentColor]
+        }).click(function () {
+            $('div').css({
+                backgroundColor : colors[currentColor + 1]
+            })
+            currentColor = currentColor + 1;
+            if (currentColor >= 2) {
+                currentColor = -1
+            }
+        })
+    </script>
+    
+    
+</body>
+</html>
